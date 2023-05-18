@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+   --primary-font: 'Big Shoulders Display', cursive;
+   --secundary-font: 'Lexend Deca', sans-serif;
+    --background-column1: #e38826;
+    --background-column2:#006970;
+    --background-column3:#004241;
+    --paragraphs-color:#ffffffbf;
+    --color-bcg-btn-headings:#f2f2f2;
+}
+
+
+
