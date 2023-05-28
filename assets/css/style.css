@@ -5,14 +5,122 @@
 }
 
 :root {
-   --primary-font: 'Big Shoulders Display', cursive;
-   --secundary-font: 'Lexend Deca', sans-serif;
+    font-size: 62.5%;
+    --primary-font: 'Big Shoulders Display', cursive;
+    --secundary-font: 'Lexend Deca', sans-serif;
     --background-column1: #e38826;
-    --background-column2:#006970;
-    --background-column3:#004241;
-    --paragraphs-color:#ffffffbf;
-    --color-bcg-btn-headings:#f2f2f2;
+    --background-column2: #006970;
+    --background-column3: #004241;
+    --paragraphs-color: #ffffffbf;
+    --color-bcg-btn-headings: #f2f2f2;
+}
+
+body {
+    background-color: var(--color-bcg-btn-headings);
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.default {
+    margin-bottom: 2.5rem;
+    padding: 0rem 2.0rem;
+}
+
+.content-main,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-main {
+    min-height: 100vh;
+    flex: 1;
+}
+
+.container {
+    width: 100%;
+}
+
+.card {
+    width: 90%;
+    padding: 1.0rem;
+    flex: 1 1 350px;
+    margin: 0rem auto;
+}
+
+.img-car {
+    width: 90px;
+    margin-top: 2.0rem;
+}
+
+.car-title {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-bcg-btn-headings);
+    font-size: 3rem;
+}
+
+.paragraph {
+    color: var(--paragraphs-color);
+    font-family: var(--secundary-font);
+    line-height: 1.75;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.button {
+    background-color: var(--color-bcg-btn-headings);
+    width: 100px;
+    padding: 1.0rem;
+    border-radius: 2.0rem;
+    border: none;
+    margin: 2.5rem;
 }
 
 
+.card-sedans {
+    background-color: var(--background-column1);
+    margin-top: 2.0rem;
+    border-radius: 1.0rem 1.0rem 0rem 0rem;
+}
+
+.card-sedans > .button {
+    color: var(--background-column1);
+}
+
+.card-suvs {
+    background-color: var(--background-column2);
+}
+
+.card-suvs > .button {
+    color: var(--background-column2);
+}
+
+.card-luxury {
+    background-color: var(--background-column3);
+    margin-bottom: 2.0rem;
+    border-radius: 0px 0px 1.0rem 1.0rem;
+}
+
+.card-luxury > .button {
+    color: var(--background-column3);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    padding: 0.5rem;
+    font-size: clamp(1.1rem, 4vw,1.3rem);
+    justify-content: center;
+}
 
